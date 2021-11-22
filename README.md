@@ -14,29 +14,56 @@ To run the service:
     then shutdown is sent to the service at the end, you can see all requests being processed, and port is closed.
 
 qiang@qiang-VirtualBox:~/go/src/qiangwq/hasher/client$ go run client.go 
+
 Info: tester: 1, http://localhost:8080/hash returns hashID 1
+
 Info: tester: 0, http://localhost:8080/hash returns hashID 2
+
 Info: tester: 1, hashID 1 not ready yet
+
 Info: tester: 0, hashID 2 not ready yet
+
 Info: tester: 1, hashID 1 not ready yet
+
 Info: tester: 0, hashID 2 not ready yet
+
 Info: tester: 1, hashID 1 not ready yet
+
 Info: tester: 0, hashID 2 not ready yet
+
 Info: tester: 0, hashID: 2, hashValue: 3a81oZNherrMQXNJriBBMRLm-k6JqX6iCp7u5ktV05ohkpkqJ0_BqDa6PCOj_uu9RU1EI2Q86A4qmslPpUyknw==
+
 Info: tester: 1, hashID: 1, hashValue: 3a81oZNherrMQXNJriBBMRLm-k6JqX6iCp7u5ktV05ohkpkqJ0_BqDa6PCOj_uu9RU1EI2Q86A4qmslPpUyknw==
+
 Info: stats: {"total":2,"average":5003}
+
 Info: stats: {"total":2,"average":5003}
+
 Info: tester: 2, http://localhost:8080/hash returns hashID 3
+
 Info: tester: 3, http://localhost:8080/hash returns hashID 4
+
 Info: tester: 2, hashID 3 not ready yet
+
 Info: tester: 3, hashID 4 not ready yet
+
 Info: tester: 2, hashID 3 not ready yet
+
 Info: tester: 3, hashID 4 not ready yet
+
 Info: tester: 3, hashID 4 not ready yet
+
 Info: tester: 2, hashID 3 not ready yet
+
 Info: tester: 3, hashID: 4, hashValue: 3a81oZNherrMQXNJriBBMRLm-k6JqX6iCp7u5ktV05ohkpkqJ0_BqDa6PCOj_uu9RU1EI2Q86A4qmslPpUyknw==
+
 Info: tester: 2, hashID: 3, hashValue: 3a81oZNherrMQXNJriBBMRLm-k6JqX6iCp7u5ktV05ohkpkqJ0_BqDa6PCOj_uu9RU1EI2Q86A4qmslPpUyknw==
+
 Info: stats: {"total":4,"average":5002}
+
 Info: stats: {"total":4,"average":5002}
+
 test failed with, error Post "http://localhost:8080/hash": dial tcp 127.0.0.1:8080: connect: connection refused
+
 test failed with, error Post "http://localhost:8080/hash": dial tcp 127.0.0.1:8080: connect: connection refused
+
