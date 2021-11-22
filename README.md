@@ -8,10 +8,9 @@ To run the service:
 4. to test the service: at another console, cd hasher/client, run: go run client.go 
 5. to shutdown the service gracefully, send shutdown request: curl -X POST --data "password=angryMonkey" http://localhost:8080/shutdown
 6. below is the test result from step 4:
-    each tester is a goruntine executing steps: 1, post password, query hash by hashID every 2 seconds until hashValue is fetched.
-    then the stats is printed and tester/goruntine stops.
-    there are 2 tester/goruntines executing at the same time.
-    then shutdown is sent to the service at the end, you can see all requests being processed, and port is closed.
+7. each tester is a goruntine executing steps: post password; query hash by hashID every 2 seconds until hashValue is fetched; then, the stats is printed and tester/goruntine stops.
+8. there are 2 tester/goruntines executing at the same time.
+9. then shutdown is sent to the service at the end, you can see all requests being processed, and port is closed.
 
 qiang@qiang-VirtualBox:~/go/src/qiangwq/hasher/client$ go run client.go 
 
